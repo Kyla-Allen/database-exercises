@@ -2,7 +2,7 @@ USE codeup_test_dp;
 
 
 INSERT INTO albums (artist, name, release_date, sales, genre)
-vALUES ('Micheal Jackson', 'Thriller', 1982, 47.3, 'Pop'),
+vALUES ('Michael Jackson', 'Thriller', 1982, 47.3, 'Pop'),
 ('Eagles', 'Their Greatest Hits', 1976, 41.2, 'Country Rock'),
 ('AC/DC', 'Back in the Black', 1980, 26.1, 'Hard Rock'),
 ('Pink Floyd', 'The Dark Side of the Moon', 1973, 24.2, 'Progressive hard Rock'),
@@ -19,7 +19,7 @@ vALUES ('Micheal Jackson', 'Thriller', 1982, 47.3, 'Pop'),
 ('Celine Dion', 'Falling into You', 1996, 20.2, 'Pop'),
 ('The Beatles', 'Sgt Peppers Lonely Hearts Club Band', 1967, 18.2, 'Rock'),
 ('Various', 'Dirty Dancing', 1987, 17.9, 'Pop'),
-('Micheal Jackson', 'Dangerous', 1991, 17.3, 'Rock'),
+('Michael Jackson', 'Dangerous', 1991, 17.3, 'Rock'),
 ('Adele', '21', 2011, 25.3, 'Pop'),
 ('Celine Dion', 'Lets Talk About Love', 1997, 19.3, 'Pop'),
 ('The Beatles', '1', 2000, 23.4, 'Rock'),
