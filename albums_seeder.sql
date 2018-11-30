@@ -1,6 +1,6 @@
 USE codeup_test_dp;
 
-
+Truncate albums;
 INSERT INTO albums (artist, name, release_date, sales, genre)
 vALUES ('Michael Jackson', 'Thriller', 1982, 47.3, 'Pop'),
 ('Eagles', 'Their Greatest Hits', 1976, 41.2, 'Country Rock'),
