@@ -7,9 +7,15 @@ SELECT DISTINCT title from titles;
 
 
 
--- Find your query for employees whose last names start and end with 'E'. Update the query find just the unique last names that start and end with 'E' using GROUP BY. The results should be:
---
---
+-- Find your query for employees whose last names start and end with 'E'.
+-- Update the query find just the unique last names that start and end
+-- with 'E' using GROUP BY. The results should be:
+
+
+SELECT last_name from employees
+ WHERE last_name like 'E%'
+ AND last_name like '%e'
+ GROUP BY last_name;
 -- Eldridge
 -- Erbe
 -- Erde
