@@ -25,3 +25,19 @@ WHERE emp_no in (
   WHERE to_date > now()
 )
 AND gender = 'F';
+
+-- BONUS
+
+-- Find all the department names that currently have female managers.
+SELECT dept_name
+FROM departments
+WHERE dept_no in (
+  SELECT dept_no
+  FROM dept_manager
+  WHERE emp_no in (
+    SELECT emp_no
+    FROM employees
+    WHERE gender = 'F'
+  )
+  AND to_date > Now()
+);
