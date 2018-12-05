@@ -27,3 +27,11 @@ FROM titles
 JOIN dept_emp on dept_emp.emp_no = titles.emp_no
 WHERE dept_no = 'd009' and titles.to_date > now()
 GROUP BY title;
+
+SELECT departments.dept_name as 'DEPARTMENT NAME', concat(employees.first_name, ' ', employees.last_name) as 'Name', salaries.salary as 'Salary'
+FROM dept_manager
+JOIN departments on departments.dept_no = dept_manager.dept_no
+JOIN employees on employees.emp_no = dept_manager.emp_no
+JOIN salaries on salaries.emp_no = dept_manager.emp_no
+WHERE dept_manager.to_date > NOW() and salaries.to_date > now()
+ORDER BY dept_name;
