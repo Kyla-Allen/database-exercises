@@ -21,3 +21,9 @@ JOIN dept_manager on dept_manager.dept_no = departments.dept_no
 JOIN employees on employees.emp_no = dept_manager.emp_no
 WHERE dept_manager.to_date > NOW() and employees.gender = 'F'
 ORDER BY departments.dept_name;
+
+SELECT titles.title as 'TITLE', COUNT(*) as 'COUNT'
+FROM titles
+JOIN dept_emp on dept_emp.emp_no = titles.emp_no
+WHERE dept_no = 'd009' and titles.to_date > now()
+GROUP BY title;
